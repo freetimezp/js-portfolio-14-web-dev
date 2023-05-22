@@ -606,6 +606,8 @@ img {
             }
 
             &:hover {
+
+                /* Work hover */
                 .work__details {
                     opacity: 1;
 
@@ -646,9 +648,50 @@ img {
     }
 }
 
-/* Work hover */
-
 /*=============== TESTIMONIALS ===============*/
+.testimonials {
+    background-color: var(--container-color);
+
+    .testimonials__container {
+        grid-template-columns: repeat(2, 1fr);
+
+        .testimonials__item {
+            .testimonial__description {
+                margin-bottom: 1.75rem;
+
+                &::before {
+                    content: '\f10d';
+                    font-family: fontawesome;
+                    display: block;
+                    color: var(--first-color);
+                    font-size: var(--h3-font-size);
+                    margin-bottom: 0.25rem;
+                }
+            }
+
+            .testimonials__data {
+                display: flex;
+                align-items: center;
+                column-gap: 1.25rem;
+
+                .testimonial__img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .testimonials__name {
+                    font-size: var(--larger-font-size);
+                }
+
+                .testimonials__identity {
+                    font-size: var(--large-font-size);
+                }
+            }
+        }
+    }
+}
 
 /*=============== CONTACT ===============*/
 
