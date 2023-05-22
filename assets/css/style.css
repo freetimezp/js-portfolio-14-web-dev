@@ -444,6 +444,61 @@ img {
 }
 
 /*=============== SKILLS ===============*/
+.skills {
+  background-color: var(--container-color);
+}
+.skills .skiils__container {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4rem;
+}
+.skills .skiils__container .skills__item {
+  transition: all 0.6s ease-in-out;
+}
+.skills .skiils__container .skills__item .skills__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+}
+.skills .skiils__container .skills__item .skills__titles .skills__name {
+  font-size: var(--larger-font-size);
+}
+.skills .skiils__container .skills__item .skills__titles .skills__no {
+  color: var(--title-color);
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-600);
+}
+.skills .skiils__container .skills__item .skills__description {
+  padding-inline: 1.5rem;
+  margin-block: 1rem 1.8rem;
+}
+.skills .skiils__container .skills__item .skills__bar,
+.skills .skiils__container .skills__item .skills__percentage {
+  height: 2px;
+}
+.skills .skiils__container .skills__item:hover .skills__bar .skills__percentage span {
+  background-color: var(--first-color);
+  border: 2px solid var(--first-color);
+}
+.skills .skiils__container .skills__item .skills__bar {
+  background-color: var(--border-color);
+}
+.skills .skiils__container .skills__item .skills__bar .skills__percentage {
+  background-color: var(--first-color);
+  position: relative;
+}
+.skills .skiils__container .skills__item .skills__bar .skills__percentage span {
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -0.75rem;
+  transition: all 0.6s ease-in-out;
+}
+
 /*=============== PORTFOLIO ===============*/
 /* Work hover */
 /*=============== TESTIMONIALS ===============*/
