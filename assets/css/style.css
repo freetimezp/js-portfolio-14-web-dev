@@ -35,6 +35,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 input,
@@ -48,6 +49,7 @@ body {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
 input,
@@ -116,6 +118,19 @@ img {
 .section__title.title-center {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--container-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 0.3rem;
 }
 
 /*=============== STYLE SWITCHER ===============*/
@@ -631,6 +646,25 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--container-color);
+  padding-block: 3rem;
+}
+.footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__container .footer__social-links {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+.footer .footer__container .footer__social-links .footer__social-link {
+  color: var(--text-color);
+  font-size: var(--large-font-size);
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 /* For medium devices */
