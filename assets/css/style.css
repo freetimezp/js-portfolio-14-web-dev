@@ -337,7 +337,10 @@ input[type=checkbox] {
 .header .nav .nav__list .nav__link:hover {
   color: var(--first-color);
 }
-.header .nav__toggler {
+.header .nav-toggler {
+  display: none;
+}
+.header .nav__toggle {
   display: none;
 }
 
@@ -960,7 +963,7 @@ input[type=checkbox] {
     overflow: hidden;
     transition: all 0.5s ease-in-out;
   }
-  .nav__toggle {
+  .header .nav__toggle {
     display: block;
     color: var(--text-color);
     font-size: 1.3rem;

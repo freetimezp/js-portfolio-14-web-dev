@@ -367,7 +367,11 @@ input[type='checkbox'] {
         }
     }
 
-    .nav__toggler {
+    .nav-toggler {
+        display: none;
+    }
+
+    .nav__toggle {
         display: none;
     }
 }
@@ -1174,11 +1178,13 @@ input[type='checkbox'] {
         transition: all 0.5s ease-in-out;
     }
 
-    .nav__toggle {
-        display: block;
-        color: var(--text-color);
-        font-size: 1.3rem;
-        cursor: pointer;
+    .header {
+        .nav__toggle {
+            display: block;
+            color: var(--text-color);
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
     }
 
     #nav-toggler:checked~.nav__list {
